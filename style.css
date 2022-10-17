@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  font-family: "Josefin Sans";
+  background: url("./images/bg-pattern-desktop.svg");
+}
+
+.hero-desktop {
+  display: block;
+  flex-basis: 610px;
+}
+
+.hero-mobile {
+  display: none;
+}
+
+.content {
+  padding-block: 64.91px 162px;
+  max-width: 404px;
+  margin-inline: auto;
+}
+
+header > .logo {
+  margin-bottom: 136.09px;
+}
+
+.content > h1 {
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+
+  letter-spacing: 17.3206px;
+
+  color: #ce9898;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.content > h1 > span {
+  font-weight: 600;
+  line-height: 71px;
+  color: #423a3a;
+}
+
+.content > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+
+  color: #ce9898;
+
+  margin-bottom: 2.5rem;
+}
+
+.form {
+  position: relative;
+}
+
+.form > input {
+  border: none;
+  outline: none;
+  padding-block: 13px;
+  padding-left: 2rem;
+  width: 100%;
+  border: 1px solid #ce9898;
+  border-radius: 28px;
+
+  color: #423a3a;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  opacity: 0.5;
+}
+
+.form > input:focus {
+  color: #423a3a;
+}
+
+input[type="email"]::placeholder {
+  color: #ce9898;
+}
+
+.form > button {
+  padding-inline: 46px;
+  padding-block: 19px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
+  box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+  border-radius: 28px;
+  border: none;
+  color: white;
+
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+.form > button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
+}
+
+.form > button > img {
+  width: 8.84px;
+  height: 17.67px;
+}
+
+.error {
+  display: none;
+  position: absolute;
+  top: 13px;
+  right: 116px;
+}
+
+.msg {
+  display: none;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 28px;
+
+  color: #f96464;
+  position: absolute;
+  bottom: -25px;
+  left: 32px;
+}
+
+.active {
+  display: block;
+}
+
+@media (max-width: 1300px) {
+  .hero-desktop {
+    flex-basis: 550.7px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-desktop {
+    flex-basis: 508.33px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero-desktop {
+    flex-basis: 465.97px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-desktop {
+    display: none;
+  }
+
+  body {
+    background: none;
+  }
+
+  .content {
+    padding-block: 31px 92px;
+    max-width: 375px;
+    margin-inline: auto;
+  }
+
+  header > .logo {
+    margin-bottom: 32.11px;
+    padding-left: 2rem;
+  }
+
+  .hero-mobile {
+    display: block;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .content > h1,
+  .content > p,
+  .content > .form {
+    padding-inline: 2rem;
+    text-align: center;
+  }
+
+  .content > h1 {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 10.8254px;
+    margin-bottom: 1rem;
+  }
+
+  .content > h1 > span {
+    font-weight: 600;
+    line-height: 42px;
+  }
+
+  .content > p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 2rem;
+  }
+
+  .form {
+    position: relative;
+  }
+
+  .form > input {
+    padding-block: 11px 9px;
+    padding-left: 24px;
+    font-size: 14px;
+  }
+
+  .form > button {
+    padding-inline: 28px;
+    padding-block: 15.5px 15.83px;
+    right: 24px;
+  }
+
+  .msg {
+    left: 55px;
+    line-height: 13px;
+  }
+
+  .error {
+    top: 13px;
+    right: 96px;
+  }
+
+  /* body {
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 375px;
+    margin-inline: auto;
+    background: none;
+
+    position: relative;
+  }
+
+  header > .logo {
+    margin-bottom: 32.11px;
+    padding-left: 2rem;
+  }
+
+  .content {
+    flex-basis: 375px;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .content > h1,
+  .content > p {
+    text-align: center;
+  }
+
+  .hero-mobile {
+    display: block;
+    width: 100%;
+
+    margin-bottom: 4rem;
+  }
+
+  .hero-desktop {
+    display: none;
+    flex-basis: 610px;
+  } */
+}
